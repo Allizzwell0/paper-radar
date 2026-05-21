@@ -17,10 +17,12 @@ Help the user monitor recent academic papers by keywords and produce a ranked li
 4. Deduplicate by DOI and normalized title.
 5. Match `config/journal_metrics.csv` by ISSN first and journal name second.
 6. Exclude retracted papers when metadata is available.
-7. Rank papers by keyword relevance, citation count, recency, journal metric, and open-access availability.
-8. When `deepseek_summaries` is enabled, call DeepSeek using `deepseek_base_url`, `deepseek_api_key`, and related generation settings to generate Chinese summaries with content overview, innovation, value, and caveats.
-9. Save machine-readable results to `outputs/ranked_papers.csv`.
-10. Save Markdown results to `outputs/latest_titles.md` and `outputs/latest_titles_title_only.md`.
+7. Exclude configured OpenAlex work types and title patterns such as datasets or "Data and Code" supplements.
+8. Rank papers by keyword relevance, citation count, recency, journal metric, and open-access availability.
+9. Filter low-relevance papers with `min_relevance`; relevance combines title and abstract matching and should carry the largest score weight by default.
+10. When `deepseek_summaries` is enabled, call DeepSeek using `deepseek_base_url`, `deepseek_api_key`, and related generation settings to generate Chinese summaries with content overview, innovation, value, and caveats.
+11. Save machine-readable results to `outputs/ranked_papers.csv`.
+12. Save Markdown results to `outputs/latest_titles.md` and `outputs/latest_titles_title_only.md`.
 
 ## Output style
 

@@ -10,16 +10,23 @@ Paper Radar 根据关键词检索近期论文，合并 OpenAlex 和 Semantic Sch
 
 ```json
 {
-  "days": 30,
+  "days": 365,
   "top": 30,
   "title_only": false,
   "min_score": 0.0,
+  "min_relevance": 0.45,
   "include_seen": false,
   "request_timeout_seconds": 30,
   "source_sleep_seconds": 0.5,
   "user_agent": "paper-radar/1.0",
   "openalex_enabled": true,
   "openalex_per_page": 50,
+  "excluded_work_types": [
+    "dataset"
+  ],
+  "excluded_title_patterns": [
+    "data and code for"
+  ],
   "semantic_scholar_enabled": true,
   "semantic_scholar_per_page": 50,
   "deepseek_summaries": true,
@@ -31,7 +38,14 @@ Paper Radar 根据关键词检索近期论文，合并 OpenAlex 和 Semantic Sch
   "deepseek_timeout_seconds": 90,
   "deepseek_sleep_seconds": 0.3,
   "deepseek_cache_enabled": true,
-  "deepseek_thinking_disabled": true
+  "deepseek_thinking_disabled": true,
+  "relevance_title_weight": 0.75,
+  "relevance_abstract_weight": 0.25,
+  "score_weight_relevance": 0.65,
+  "score_weight_citation": 0.15,
+  "score_weight_recency": 0.10,
+  "score_weight_journal": 0.07,
+  "score_weight_open_access": 0.03
 }
 ```
 
@@ -39,12 +53,15 @@ Paper Radar 根据关键词检索近期论文，合并 OpenAlex 和 Semantic Sch
 - `top`：最多输出多少篇。
 - `title_only`：为 `true` 时，`outputs/latest_titles.md` 使用标题版格式；无论该值如何，脚本都会生成 `outputs/latest_titles_title_only.md`。
 - `min_score`：过滤低于该分数的论文。
+- `min_relevance`：过滤低于该相关度的论文，相关度基于标题和摘要对关键词的匹配；调高会更严格。
 - `include_seen`：是否包含已经写入 `data/seen_papers.json` 的论文。
 - `request_timeout_seconds`：OpenAlex、Semantic Scholar 等普通 HTTP 请求超时。
 - `source_sleep_seconds`：不同学术数据源请求之间的暂停秒数。
 - `user_agent`：请求 API 时使用的 User-Agent。
 - `openalex_enabled` / `semantic_scholar_enabled`：是否启用对应数据源。
 - `openalex_per_page` / `semantic_scholar_per_page`：每个关键词从对应数据源最多拉取多少条。
+- `excluded_work_types`：排除的 OpenAlex work type；默认排除 `dataset`，避免补充数据/代码包排到论文前面。
+- `excluded_title_patterns`：按标题关键词排除结果；默认排除 `Data and Code for` 这类补充材料。
 - `deepseek_summaries`：为 `true` 时，在排名完成后调用 DeepSeek 生成中文论文总结，并附到 `outputs/latest_titles_title_only.md` 每篇文章之后。
 - `deepseek_base_url`：DeepSeek API 地址，默认 `https://api.deepseek.com`。
 - `deepseek_model`：用于生成总结的 DeepSeek 模型，可用 `--deepseek-model` 覆盖。
@@ -54,6 +71,8 @@ Paper Radar 根据关键词检索近期论文，合并 OpenAlex 和 Semantic Sch
 - `deepseek_sleep_seconds`：每篇文章总结之间的暂停秒数。
 - `deepseek_cache_enabled`：是否启用 `data/deepseek_summaries.json` 总结缓存。
 - `deepseek_thinking_disabled`：是否在请求 DeepSeek 时附带关闭 thinking 的参数。
+- `relevance_title_weight` / `relevance_abstract_weight`：标题和摘要在相关度计算中的权重。
+- `score_weight_relevance` / `score_weight_citation` / `score_weight_recency` / `score_weight_journal` / `score_weight_open_access`：总分各项权重；脚本会自动归一化，当前默认更偏重关键词相关度。
 
 私密参数写在 `config/settings.local.json`。这个文件已在 `.gitignore` 中忽略，不会被 Git 提交；可以参考 `config/settings.local.example.json`：
 

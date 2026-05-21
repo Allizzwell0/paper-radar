@@ -633,5 +633,135 @@
     "title": "A blockchain-enabled framework for secure and efficient data transmission in underwater sensor networks using advanced cryptographic techniques",
     "doi": "https://doi.org/10.1038/s41598-026-49371-9",
     "first_seen": "2026-05-21"
+  },
+  "title:a switching nonlinear model predictive control strategy for safe collision handling by an underwater vehicle manipulator system": {
+    "title": "A Switching Nonlinear Model Predictive Control Strategy for Safe Collision Handling by an Underwater Vehicle-Manipulator System",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.48550/arxiv.2601.18971": {
+    "title": "A Switching Nonlinear Model Predictive Control Strategy for Safe Collision Handling by an Underwater Vehicle-Manipulator System",
+    "doi": "https://doi.org/10.48550/arxiv.2601.18971",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.5281/zenodo.18357280": {
+    "title": "A Switching Nonlinear Model Predictive Control Strategy for Safe Collision Handling by an Underwater Vehicle-Manipulator System",
+    "doi": "https://doi.org/10.5281/zenodo.18357280",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.5281/zenodo.18357279": {
+    "title": "A Switching Nonlinear Model Predictive Control Strategy for Safe Collision Handling by an Underwater Vehicle-Manipulator System",
+    "doi": "https://doi.org/10.5281/zenodo.18357279",
+    "first_seen": "2026-05-21"
+  },
+  "title:umi underwater learning underwater manipulation without underwater teleoperation": {
+    "title": "UMI-Underwater: Learning Underwater Manipulation without Underwater Teleoperation",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3390/jmse13122361": {
+    "title": "Development of an Underwater Vehicle-Manipulator System Based on Delta Parallel Mechanism",
+    "doi": "https://doi.org/10.3390/jmse13122361",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1109/stpec66316.2025.11490319": {
+    "title": "Robust Position Tracking Control of Underwater Vehicle-Manipulator System: Nonsingular Fast Terminal Quasi Sliding Mode",
+    "doi": "https://doi.org/10.1109/stpec66316.2025.11490319",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1109/spic68204.2025.11470774": {
+    "title": "A Fast Model Predictive Control Method for Underwater Vehicle-Manipulator System Based on Value Iteration Optimization",
+    "doi": "https://doi.org/10.1109/spic68204.2025.11470774",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.20944/preprints202511.1656.v1": {
+    "title": "Development of an Underwater Vehicle-Manipulator System Based on Delta Parallel Mechanism",
+    "doi": "https://doi.org/10.20944/preprints202511.1656.v1",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.54287/gujsa.1813751": {
+    "title": "Integrating Proximal Policy Optimization with Physically Realistic Simulation for Robust Autonomous Underwater Vehicle Control",
+    "doi": "https://doi.org/10.54287/gujsa.1813751",
+    "first_seen": "2026-05-21"
+  },
+  "title:sim to reality adaptation for deep reinforcement learning applied to an underwater docking application": {
+    "title": "Sim-to-reality adaptation for Deep Reinforcement Learning applied to an underwater docking application",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1049/sbra565e_ch4": {
+    "title": "Collaboration of multiple underwater vehicle-manipulator systems",
+    "doi": "https://doi.org/10.1049/sbra565e_ch4",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3390/jmse13081447": {
+    "title": "Whole-Body Vision/Force Control for an Underwater Vehicle–Manipulator System with Smooth Task Transitions",
+    "doi": "https://doi.org/10.3390/jmse13081447",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1631/fitee.2400471": {
+    "title": "A unified shared control architecture for underwater vehicle–manipulator systems using task priority",
+    "doi": "https://doi.org/10.1631/fitee.2400471",
+    "first_seen": "2026-05-21"
+  },
+  "title:uncertainty aware adaptive dynamics for underwater vehicle manipulator robots": {
+    "title": "Uncertainty-Aware Adaptive Dynamics For Underwater Vehicle-Manipulator Robots",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "title:the port hamiltonian structure of vehicle manipulator systems": {
+    "title": "The Port-Hamiltonian Structure of Vehicle Manipulator Systems",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.48550/arxiv.2603.27012": {
+    "title": "UMI-Underwater: Learning Underwater Manipulation without Underwater Teleoperation",
+    "doi": "https://doi.org/10.48550/arxiv.2603.27012",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3390/drones10040282": {
+    "title": "Method for Controlling the Movement of an AUV Follower Based on Visual Information About the Position of the AUV Leader Using Reinforcement Learning Methods",
+    "doi": "https://doi.org/10.3390/drones10040282",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.48550/arxiv.2603.18784": {
+    "title": "ViTac-Tracing: Visual-Tactile Imitation Learning of Deformable Object Tracing",
+    "doi": "https://doi.org/10.48550/arxiv.2603.18784",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1016/j.oceaneng.2026.125437": {
+    "title": "Hydrodynamic disturbance characteristics of underwater vehicle-manipulator system induced by manipulator motion",
+    "doi": "https://doi.org/10.1016/j.oceaneng.2026.125437",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1177/00202940251355059": {
+    "title": "Disturbance observer based fractional-order sliding mode control for underwater vehicle with variable center of mass",
+    "doi": "https://doi.org/10.1177/00202940251355059",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1109/ccta53793.2025.11151363": {
+    "title": "Exponentially Stable Robust Hierarchical Tracking Control for Vehicle-Manipulator Systems",
+    "doi": "https://doi.org/10.1109/ccta53793.2025.11151363",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1016/j.oceaneng.2025.123222": {
+    "title": "A value-iteration and sliding-mode based tube model predictive control for multi-degree-of-freedom underwater vehicle-manipulator system",
+    "doi": "https://doi.org/10.1016/j.oceaneng.2025.123222",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1088/1742-6596/3032/1/012024": {
+    "title": "Disturbance analysis of the surrounding flow field during the movement of UVMS manipulator",
+    "doi": "https://doi.org/10.1088/1742-6596/3032/1/012024",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1109/maris64137.2025.11139730": {
+    "title": "A whole-body UVMS motion planning approach for underwater propeller cleaning",
+    "doi": "https://doi.org/10.1109/maris64137.2025.11139730",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1109/oceans58557.2025.11104557": {
+    "title": "Modeling and Task Planning of an Integrated UVMS Platform for Underwater Operation Disposal",
+    "doi": "https://doi.org/10.1109/oceans58557.2025.11104557",
+    "first_seen": "2026-05-21"
   }
 }

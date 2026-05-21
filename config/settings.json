@@ -1,14 +1,21 @@
 {
-  "days": 30,
+  "days": 365,
   "top": 30,
   "title_only": false,
   "min_score": 0.0,
+  "min_relevance": 0.45,
   "include_seen": false,
   "request_timeout_seconds": 30,
   "source_sleep_seconds": 0.5,
   "user_agent": "paper-radar/1.0",
   "openalex_enabled": true,
   "openalex_per_page": 50,
+  "excluded_work_types": [
+    "dataset"
+  ],
+  "excluded_title_patterns": [
+    "data and code for"
+  ],
   "semantic_scholar_enabled": true,
   "semantic_scholar_per_page": 50,
   "deepseek_summaries": true,
@@ -20,5 +27,12 @@
   "deepseek_timeout_seconds": 90,
   "deepseek_sleep_seconds": 0.3,
   "deepseek_cache_enabled": true,
-  "deepseek_thinking_disabled": true
+  "deepseek_thinking_disabled": true,
+  "relevance_title_weight": 0.75,
+  "relevance_abstract_weight": 0.25,
+  "score_weight_relevance": 0.65,
+  "score_weight_citation": 0.15,
+  "score_weight_recency": 0.10,
+  "score_weight_journal": 0.07,
+  "score_weight_open_access": 0.03
 }

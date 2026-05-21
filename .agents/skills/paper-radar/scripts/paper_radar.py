@@ -35,6 +35,7 @@ DEFAULT_SETTINGS = {
     "top": 30,
     "title_only": False,
     "min_score": 0.0,
+    "min_relevance": 0.25,
     "include_seen": False,
     "request_timeout_seconds": 30,
     "source_sleep_seconds": 0.5,
@@ -42,6 +43,8 @@ DEFAULT_SETTINGS = {
     "openalex_enabled": True,
     "openalex_per_page": 50,
     "openalex_mailto": "",
+    "excluded_work_types": ["dataset"],
+    "excluded_title_patterns": ["data and code for"],
     "semantic_scholar_enabled": True,
     "semantic_scholar_per_page": 50,
     "semantic_scholar_api_key": "",
@@ -56,6 +59,13 @@ DEFAULT_SETTINGS = {
     "deepseek_sleep_seconds": 0.3,
     "deepseek_cache_enabled": True,
     "deepseek_thinking_disabled": True,
+    "relevance_title_weight": 0.75,
+    "relevance_abstract_weight": 0.25,
+    "score_weight_relevance": 0.65,
+    "score_weight_citation": 0.15,
+    "score_weight_recency": 0.10,
+    "score_weight_journal": 0.07,
+    "score_weight_open_access": 0.03,
 }
 MISSING = "未找到"
 
@@ -85,6 +95,12 @@ def load_settings(settings_file=SETTINGS_FILE, local_settings_file=LOCAL_SETTING
     settings["min_score"] = float(settings["min_score"])
     if settings["min_score"] < 0:
         raise ValueError("min_score must be greater than or equal to 0.")
+    settings["min_relevance"] = bounded_float(
+        settings["min_relevance"],
+        "min_relevance",
+        0.0,
+        1.0,
+    )
     settings["request_timeout_seconds"] = positive_int(
         settings["request_timeout_seconds"],
         "request_timeout_seconds",
@@ -97,6 +113,11 @@ def load_settings(settings_file=SETTINGS_FILE, local_settings_file=LOCAL_SETTING
     settings["openalex_enabled"] = parse_bool(settings["openalex_enabled"], "openalex_enabled")
     settings["openalex_per_page"] = positive_int(settings["openalex_per_page"], "openalex_per_page")
     settings["openalex_mailto"] = str(settings["openalex_mailto"]).strip()
+    settings["excluded_work_types"] = string_list(settings["excluded_work_types"], "excluded_work_types")
+    settings["excluded_title_patterns"] = string_list(
+        settings["excluded_title_patterns"],
+        "excluded_title_patterns",
+    )
     settings["semantic_scholar_enabled"] = parse_bool(
         settings["semantic_scholar_enabled"],
         "semantic_scholar_enabled",
@@ -149,6 +170,46 @@ def load_settings(settings_file=SETTINGS_FILE, local_settings_file=LOCAL_SETTING
         settings["deepseek_thinking_disabled"],
         "deepseek_thinking_disabled",
     )
+    settings["relevance_title_weight"] = non_negative_float(
+        settings["relevance_title_weight"],
+        "relevance_title_weight",
+    )
+    settings["relevance_abstract_weight"] = non_negative_float(
+        settings["relevance_abstract_weight"],
+        "relevance_abstract_weight",
+    )
+    relevance_weight_total = settings["relevance_title_weight"] + settings["relevance_abstract_weight"]
+    if relevance_weight_total <= 0:
+        raise ValueError("relevance title/abstract weights must sum to a positive number.")
+    settings["score_weight_relevance"] = non_negative_float(
+        settings["score_weight_relevance"],
+        "score_weight_relevance",
+    )
+    settings["score_weight_citation"] = non_negative_float(
+        settings["score_weight_citation"],
+        "score_weight_citation",
+    )
+    settings["score_weight_recency"] = non_negative_float(
+        settings["score_weight_recency"],
+        "score_weight_recency",
+    )
+    settings["score_weight_journal"] = non_negative_float(
+        settings["score_weight_journal"],
+        "score_weight_journal",
+    )
+    settings["score_weight_open_access"] = non_negative_float(
+        settings["score_weight_open_access"],
+        "score_weight_open_access",
+    )
+    score_weight_total = (
+        settings["score_weight_relevance"]
+        + settings["score_weight_citation"]
+        + settings["score_weight_recency"]
+        + settings["score_weight_journal"]
+        + settings["score_weight_open_access"]
+    )
+    if score_weight_total <= 0:
+        raise ValueError("score weights must sum to a positive number.")
     return settings
 
 
@@ -212,6 +273,16 @@ def parse_bool(value, name):
         if normalized in {"0", "false", "no", "n", "off"}:
             return False
     raise ValueError(f"{name} must be a boolean.")
+
+
+def string_list(value, name):
+    if value is None:
+        return []
+    if isinstance(value, str):
+        return [item.strip().lower() for item in value.split(",") if item.strip()]
+    if isinstance(value, list):
+        return [str(item).strip().lower() for item in value if str(item).strip()]
+    raise ValueError(f"{name} must be a list of strings or a comma-separated string.")
 
 
 def load_seen():
@@ -523,6 +594,7 @@ def extract_openalex_work(work, keyword):
         "title": title,
         "normalized_title": normalize_title(title),
         "abstract": abstract_from_inverted_index(work.get("abstract_inverted_index")),
+        "work_type": work.get("type") or "",
         "doi": format_doi(work.get("doi")),
         "publication_date": work.get("publication_date") or "",
         "journal": source.get("display_name") or MISSING,
@@ -553,6 +625,7 @@ def extract_semantic_scholar_work(work, keyword):
         "title": title,
         "normalized_title": normalize_title(title),
         "abstract": clean_text(work.get("abstract") or ""),
+        "work_type": "paper",
         "doi": format_doi(external_ids.get("DOI")),
         "publication_date": publication_date,
         "journal": journal_name,
@@ -589,10 +662,21 @@ def paper_key(paper):
     return ""
 
 
+def paper_keys(paper):
+    doi = normalize_doi(paper.get("doi"))
+    title = paper.get("normalized_title") or normalize_title(paper.get("title"))
+    keys = []
+    if doi:
+        keys.append(f"doi:{doi}")
+    if title:
+        keys.append(f"title:{title}")
+    return keys
+
+
 def seen_keys_for(paper):
     doi = normalize_doi(paper.get("doi"))
     title = paper.get("normalized_title") or normalize_title(paper.get("title"))
-    keys = [paper_key(paper), paper.get("doi", ""), doi, title]
+    keys = paper_keys(paper) + [paper.get("doi", ""), doi, title]
     return {key for key in keys if key}
 
 
@@ -633,20 +717,25 @@ def merge_paper(existing, new_paper):
 
 
 def dedupe(papers):
-    deduped = {}
+    deduped = []
+    key_to_index = {}
     for paper in papers:
-        key = paper_key(paper)
-        if not key:
+        keys = paper_keys(paper)
+        if not keys:
             continue
-        if key in deduped:
-            merge_paper(deduped[key], paper)
+        existing_index = next((key_to_index[key] for key in keys if key in key_to_index), None)
+        if existing_index is not None:
+            merge_paper(deduped[existing_index], paper)
+            for key in paper_keys(deduped[existing_index]):
+                key_to_index[key] = existing_index
         else:
-            deduped[key] = paper
-    return list(deduped.values())
+            key_to_index.update({key: len(deduped) for key in keys})
+            deduped.append(paper)
+    return deduped
 
 
-def relevance_score(title, keyword):
-    title_norm = normalize_title(title)
+def text_relevance_score(text, keyword):
+    text_norm = normalize_title(text)
     keywords = [k.strip() for k in str(keyword or "").split(";") if k.strip()]
     if not keywords:
         return 0.0
@@ -657,10 +746,19 @@ def relevance_score(title, keyword):
         terms = [t for t in item_norm.split() if len(t) > 2]
         if not terms:
             continue
-        hits = sum(1 for term in terms if term in title_norm)
-        phrase_hit = 1 if item_norm in title_norm else 0
+        hits = sum(1 for term in terms if term in text_norm)
+        phrase_hit = 1 if item_norm in text_norm else 0
         best_score = max(best_score, min(1.0, (hits / len(terms)) * 0.75 + phrase_hit * 0.25))
     return best_score
+
+
+def relevance_score(paper, settings):
+    title_score = text_relevance_score(paper.get("title", ""), paper.get("matched_keyword"))
+    abstract_score = text_relevance_score(paper.get("abstract", ""), paper.get("matched_keyword"))
+    title_weight = settings["relevance_title_weight"]
+    abstract_weight = settings["relevance_abstract_weight"]
+    total_weight = title_weight + abstract_weight
+    return (title_score * title_weight + abstract_score * abstract_weight) / total_weight
 
 
 def recency_score(publication_date, days):
@@ -674,20 +772,35 @@ def recency_score(publication_date, days):
     return max(0.0, 1.0 - age / max(days, 1))
 
 
-def score_paper(paper, days):
-    rel = relevance_score(paper["title"], paper["matched_keyword"])
+def score_paper(paper, settings):
+    rel = paper.get("relevance_score")
+    if rel is None:
+        rel = relevance_score(paper, settings)
     citation = min(1.0, math.log1p(paper["cited_by_count"]) / math.log1p(500))
-    recency = recency_score(paper["publication_date"], days)
+    recency = recency_score(paper["publication_date"], settings["days"])
     oa = 1.0 if paper["is_open_access"] else 0.0
     journal_metric = float(paper.get("journal_metric_score") or 0.0)
+    weights = score_weights(settings)
 
     return (
-        0.40 * rel
-        + 0.25 * citation
-        + 0.20 * recency
-        + 0.10 * journal_metric
-        + 0.05 * oa
+        weights["relevance"] * rel
+        + weights["citation"] * citation
+        + weights["recency"] * recency
+        + weights["journal"] * journal_metric
+        + weights["open_access"] * oa
     )
+
+
+def score_weights(settings):
+    weights = {
+        "relevance": settings["score_weight_relevance"],
+        "citation": settings["score_weight_citation"],
+        "recency": settings["score_weight_recency"],
+        "journal": settings["score_weight_journal"],
+        "open_access": settings["score_weight_open_access"],
+    }
+    total = sum(weights.values())
+    return {key: value / total for key, value in weights.items()}
 
 
 def display_metric(value):
@@ -831,6 +944,7 @@ def build_full_markdown(papers):
         lines.append("")
         lines.append(f"- DOI: {paper.get('doi') or MISSING}")
         lines.append(f"- Journal: {paper.get('journal') or MISSING}")
+        lines.append(f"- Type: {paper.get('work_type') or MISSING}")
         lines.append(f"- Impact factor: {display_metric(paper.get('journal_impact_factor'))}")
         lines.append(f"- JCR quartile: {paper.get('jcr_quartile') or MISSING}")
         lines.append(f"- Date: {paper.get('publication_date') or MISSING}")
@@ -838,6 +952,7 @@ def build_full_markdown(papers):
         lines.append(f"- FWCI: {display_metric(paper.get('fwci'))}")
         lines.append(f"- Sources: {paper.get('sources') or MISSING}")
         lines.append(f"- Matched keyword: {paper.get('matched_keyword')}")
+        lines.append(f"- Relevance: {paper.get('relevance_score', 0):.4f}")
         lines.append(f"- Score: {paper.get('score'):.4f}")
         lines.append("")
     return "\n".join(lines)
@@ -861,8 +976,10 @@ def write_outputs(papers, title_only=False):
 
     fields = [
         "score",
+        "relevance_score",
         "title",
         "abstract",
+        "work_type",
         "doi",
         "publication_date",
         "journal",
@@ -909,6 +1026,10 @@ def fetch_keyword_papers(keyword, from_date, settings, use_semantic_scholar=True
                 paper = extract_openalex_work(work, keyword)
                 if paper["is_retracted"] or not paper["title"]:
                     continue
+                if is_excluded_work_type(paper, settings):
+                    continue
+                if is_excluded_title(paper, settings):
+                    continue
                 papers.append(paper)
         except Exception as exc:
             print(f"Warning: OpenAlex failed for keyword '{keyword}': {format_error(exc)}")
@@ -924,6 +1045,8 @@ def fetch_keyword_papers(keyword, from_date, settings, use_semantic_scholar=True
             paper = extract_semantic_scholar_work(work, keyword)
             if not paper["title"] or not is_recent_enough(paper["publication_date"], from_date):
                 continue
+            if is_excluded_title(paper, settings):
+                continue
             papers.append(paper)
     except Exception as exc:
         print(f"Warning: Semantic Scholar failed for keyword '{keyword}': {format_error(exc)}")
@@ -931,6 +1054,16 @@ def fetch_keyword_papers(keyword, from_date, settings, use_semantic_scholar=True
 
     time.sleep(settings["source_sleep_seconds"])
     return papers, semantic_scholar_limited
+
+
+def is_excluded_work_type(paper, settings):
+    work_type = str(paper.get("work_type") or "").strip().lower()
+    return bool(work_type and work_type in settings["excluded_work_types"])
+
+
+def is_excluded_title(paper, settings):
+    title = clean_text(paper.get("title") or "").lower()
+    return any(pattern in title for pattern in settings["excluded_title_patterns"])
 
 
 def format_error(exc):
@@ -1040,8 +1173,10 @@ def main():
         papers = [paper for paper in papers if not is_seen(paper, seen)]
 
     for paper in papers:
-        paper["score"] = score_paper(paper, settings["days"])
+        paper["relevance_score"] = relevance_score(paper, settings)
+        paper["score"] = score_paper(paper, settings)
 
+    papers = [paper for paper in papers if paper["relevance_score"] >= settings["min_relevance"]]
     papers = [paper for paper in papers if paper["score"] >= settings["min_score"]]
     papers.sort(key=lambda p: p["score"], reverse=True)
     papers = papers[: settings["top"]]
