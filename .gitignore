@@ -1,0 +1,6 @@
+# Local secrets and machine-specific overrides
+config/settings.local.json
+config/*.secret.json
+.env
+.env.local
+

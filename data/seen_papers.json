@@ -298,5 +298,340 @@
     "title": "Study on Chronological Development of Cosmology and Evaluation of Mystery of Universe",
     "doi": "https://doi.org/10.47191/ijmra/v9-i5-12",
     "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s42256-026-01230-y": {
+    "title": "Peripheral control enabled by distributed sensing in an octopus-inspired soft robotic arm for autonomous underwater grasping",
+    "doi": "https://doi.org/10.1038/s42256-026-01230-y",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.5281/zenodo.18969202": {
+    "title": "Data and Code for \"Peripheral Control Enabled by Distributed Sensing in an Octopus-Inspired Soft Robotic Arm for Autonomous Underwater Grasping\"",
+    "doi": "https://doi.org/10.5281/zenodo.18969202",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.5281/zenodo.18969201": {
+    "title": "Data and Code for \"Peripheral Control Enabled by Distributed Sensing in an Octopus-Inspired Soft Robotic Arm for Autonomous Underwater Grasping\"",
+    "doi": "https://doi.org/10.5281/zenodo.18969201",
+    "first_seen": "2026-05-21"
+  },
+  "title:lassa architecture based autonomous fault tolerant control of unmanned underwater vehicles": {
+    "title": "LASSA Architecture-Based Autonomous Fault-Tolerant Control of Unmanned Underwater Vehicles",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-50682-0": {
+    "title": "Enhanced dynamic window approach for autonomous obstacle avoidance in unmanned underwater vehicles",
+    "doi": "https://doi.org/10.1038/s41598-026-50682-0",
+    "first_seen": "2026-05-21"
+  },
+  "title:3d rl dwa a hybrid reinforcement learning and dynamic window approach for goal directed local navigation in multi dof robots": {
+    "title": "3D RL-DWA: A Hybrid Reinforcement Learning and Dynamic Window Approach for Goal-Directed Local Navigation in Multi-DoF Robots",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3390/act15050246": {
+    "title": "Neural Network-Augmented Actuation Control System Designed for Path Tracking of Autonomous Underwater-Transportation Systems Under Sensor and Process Noise",
+    "doi": "https://doi.org/10.3390/act15050246",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.55730/1300-0632.4185": {
+    "title": "Adaptive backstepping nonsingular fast terminal sliding mode control for robotic manipulators based on disturbance observer",
+    "doi": "https://doi.org/10.55730/1300-0632.4185",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.21203/rs.3.rs-9611886/v1": {
+    "title": "Gaussian Splashing Enables Direct Volumetric Rendering Underwater",
+    "doi": "https://doi.org/10.21203/rs.3.rs-9611886/v1",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3389/fnbot.2026.1858458": {
+    "title": "Editorial: Biomechanical and cognitive pattern assessment in human-machine collaborative tasks for industrial robotics",
+    "doi": "https://doi.org/10.3389/fnbot.2026.1858458",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1016/j.oceaneng.2026.125801": {
+    "title": "Intelligent control of robotic manta ray based on data-driven deep reinforcement learning",
+    "doi": "https://doi.org/10.1016/j.oceaneng.2026.125801",
+    "first_seen": "2026-05-21"
+  },
+  "title:q moho q machine learning guided multi objective power optimization for ris assisted mimo noma systems": {
+    "title": "Q-MOHO: Q-Machine Learning Guided Multi-Objective Power Optimization for RIS-Assisted MIMO-NOMA Systems",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3389/fhumd.2026.1777511": {
+    "title": "AI-assisted narrative design: a model of human-AI collaborative creativity in popularizing digital journalism articles",
+    "doi": "https://doi.org/10.3389/fhumd.2026.1777511",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-53143-w": {
+    "title": "Performance Studies on machine learning based channel modelling for vehicular visible light communication",
+    "doi": "https://doi.org/10.1038/s41598-026-53143-w",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.48550/arxiv.2605.15535": {
+    "title": "Learning Dynamic Structural Specialization for Underwater Salient Object Detection",
+    "doi": "https://doi.org/10.48550/arxiv.2605.15535",
+    "first_seen": "2026-05-21"
+  },
+  "title:learning dynamic structural specialization for underwater salient object detection": {
+    "title": "Learning Dynamic Structural Specialization for Underwater Salient Object Detection",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3991/ijim.v20i09.61487": {
+    "title": "Evaluating HARQ Protocols for Mobile and Interactive Applications in Underwater Acoustic Wireless Sensor Networks",
+    "doi": "https://doi.org/10.3991/ijim.v20i09.61487",
+    "first_seen": "2026-05-21"
+  },
+  "title:halo separation guided underwater multi scale image restoration": {
+    "title": "Halo Separation-guided Underwater Multi-scale Image Restoration",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "title:learning swimming gaits and navigation on a biomimetic marine robot": {
+    "title": "Learning swimming gaits and navigation on a biomimetic marine robot",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-52734-x": {
+    "title": "HTO-UWSN: a hierarchical task offloading protocol for underwater wireless sensor networks in aquatic sports monitoring systems",
+    "doi": "https://doi.org/10.1038/s41598-026-52734-x",
+    "first_seen": "2026-05-21"
+  },
+  "title:seavis modeling and control of a remotely operated towed vehicle for seabed visualization and mapping": {
+    "title": "SeaVis: Modeling and Control of a Remotely Operated Towed Vehicle for Seabed Visualization and Mapping",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "title:minimizing worst case weighted latency for multi robot persistent monitoring theory and rl based solutions": {
+    "title": "Minimizing Worst-Case Weighted Latency for Multi-Robot Persistent Monitoring: Theory and RL-Based Solutions",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "title:bi level reinforcement learning control for an underactuated blimp via center of mass reconfiguration": {
+    "title": "Bi-Level Reinforcement Learning Control for an Underactuated Blimp via Center-of-Mass Reconfiguration",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.7736/jkspe.026.00010": {
+    "title": "Path Optimization for 6-axis Robot Control Using Open Simulation-based Reinforcement Learning",
+    "doi": "https://doi.org/10.7736/jkspe.026.00010",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1016/j.robot.2026.105539": {
+    "title": "A Novel Versatile Mechanical Integrated Leg-Based Underwater Grasping Function for a Bionic Amphibious Spherical Robot",
+    "doi": "https://doi.org/10.1016/j.robot.2026.105539",
+    "first_seen": "2026-05-21"
+  },
+  "title:cosmic concurrent optimization of structure material and integrated control for robotic systems": {
+    "title": "COSMIC: Concurrent Optimization of Structure, Material, and Integrated Control for robotic systems",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3390/math14101646": {
+    "title": "A Product Lifecycle Management-Oriented Fuzzy MCDM Model for Prioritizing Virtual Reality and Augmented Reality Applications in Industrial Design and Manufacturing: Design Optimization and Robustness Analysis",
+    "doi": "https://doi.org/10.3390/math14101646",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-52316-x": {
+    "title": "Intelligent underwater mine detection using multi-backbone feature fusion with temporal attention-gated unit on side-scan sonar imaging",
+    "doi": "https://doi.org/10.1038/s41598-026-52316-x",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s41597-026-07402-0": {
+    "title": "UVMulti: A Large-scale Benchmark Dataset for Underwater Video-level Multi-task Learning",
+    "doi": "https://doi.org/10.1038/s41597-026-07402-0",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-49350-0": {
+    "title": "Robust LPV pitch control of autonomous underwater vehicle with input constraints",
+    "doi": "https://doi.org/10.1038/s41598-026-49350-0",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.21203/rs.3.rs-9264058/v1": {
+    "title": "Adaptive Pose Control for Robotic Manipulators Under Model Uncertainties with Application to Assembly Tasks",
+    "doi": "https://doi.org/10.21203/rs.3.rs-9264058/v1",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1051/epjconf/202636701008/pdf": {
+    "title": "Optimization of an Autonomous Underwater Vehicle for Enhanced Stability",
+    "doi": "https://doi.org/10.1051/epjconf/202636701008/pdf",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1002/adfm.75782": {
+    "title": "Controllable Passive Suction Cups With Mechanical Programmability for Soft Robotics",
+    "doi": "https://doi.org/10.1002/adfm.75782",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.54254/2755-2721/2026.32994": {
+    "title": "Research on the Integration of Autonomous Underwater Vehicles and Digital Twin Technology",
+    "doi": "https://doi.org/10.54254/2755-2721/2026.32994",
+    "first_seen": "2026-05-21"
+  },
+  "title:bipneu design and control of a bipolar pressure pneumatic system for soft robots": {
+    "title": "BiPneu: Design and Control of a Bipolar-Pressure Pneumatic System for Soft Robots",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3389/fmars.2026.1840407": {
+    "title": "Large model-driven China-ASEAN mangrove protection and sustainable development framework: a case study of Guangxi, China",
+    "doi": "https://doi.org/10.3389/fmars.2026.1840407",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.32782/2220-8674-2026-16-1-22": {
+    "title": "ТЕОРЕТИЧНІ ПИТАННЯ ТА ПРОЄКТУВАННЯ ЛАЗЕРНИХ СИСТЕМ (LS)",
+    "doi": "https://doi.org/10.32782/2220-8674-2026-16-1-22",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s40494-026-02601-9": {
+    "title": "Flash lidar for underwater cultural heritage mapping",
+    "doi": "https://doi.org/10.1038/s40494-026-02601-9",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1007/s44267-026-00116-2": {
+    "title": "Intelligent robot systems: a survey from the perspective of visual intelligence",
+    "doi": "https://doi.org/10.1007/s44267-026-00116-2",
+    "first_seen": "2026-05-21"
+  },
+  "title:earth science foundation models from perception to reasoning and discovery": {
+    "title": "Earth Science Foundation Models: From Perception to Reasoning and Discovery",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "title:univ2d bridging visual restoration and semantic perception for underwater salient object detection": {
+    "title": "UniV2D: Bridging Visual Restoration and Semantic Perception for Underwater Salient Object Detection",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.5772/intechopen.1015707": {
+    "title": "Local Microcosm of Planetary Health: Global Challenges, Local Solutions",
+    "doi": "https://doi.org/10.5772/intechopen.1015707",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.59400/cai4243": {
+    "title": "The algorithmic guardians: AI and computer vision for global faunal welfare, conservation, and future policy trajectories in the Indian subcontinent",
+    "doi": "https://doi.org/10.59400/cai4243",
+    "first_seen": "2026-05-21"
+  },
+  "title:stem education determines interdisciplinary integration": {
+    "title": "Stem Education Determines Interdisciplinary Integration",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1007/s10651-026-00732-7": {
+    "title": "Integrating deep learning and spatial statistics in marine ecosystem monitoring",
+    "doi": "https://doi.org/10.1007/s10651-026-00732-7",
+    "first_seen": "2026-05-21"
+  },
+  "title:a systematic review and taxonomy of reinforcement learning model predictive control integration for linear systems": {
+    "title": "A Systematic Review and Taxonomy of Reinforcement Learning-Model Predictive Control Integration for Linear Systems",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.47852/bonviewjcce62028129": {
+    "title": "An IoT-Based Intelligent Monitoring System for Cargo Loss Detection in FPSO-Tanker Oil Transfer",
+    "doi": "https://doi.org/10.47852/bonviewjcce62028129",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1007/s40789-026-00866-w": {
+    "title": "Evolution of visualisation and digital twin technologies in mining",
+    "doi": "https://doi.org/10.1007/s40789-026-00866-w",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1007/s42524-026-5394-x": {
+    "title": "AI for quality management: A review",
+    "doi": "https://doi.org/10.1007/s42524-026-5394-x",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1080/01691864.2026.2664845": {
+    "title": "Swarm self-clustering for communication-denied environments without global positioning",
+    "doi": "https://doi.org/10.1080/01691864.2026.2664845",
+    "first_seen": "2026-05-21"
+  },
+  "title:learning hybrid control policies for high precision in contact manipulation under uncertainty": {
+    "title": "Learning Hybrid-Control Policies for High-Precision In-Contact Manipulation Under Uncertainty",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "title:robust parameter learning for uncertain mdps": {
+    "title": "Robust Parameter Learning for Uncertain MDPs",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "title:multi depth uniform coverage path planning for unmanned surface vehicle surveying": {
+    "title": "Multi-Depth Uniform Coverage Path Planning for Unmanned Surface Vehicle Surveying",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1186/s13638-026-02607-8": {
+    "title": "Environment-aware indoor LoRaWAN path loss: parametric regression comparisons, shadow fading, and calibrated fade margins",
+    "doi": "https://doi.org/10.1186/s13638-026-02607-8",
+    "first_seen": "2026-05-21"
+  },
+  "title:dynojepp joint estimation prediction and planning in dynamic environments": {
+    "title": "DynoJEPP: Joint Estimation, Prediction and Planning in Dynamic Environments",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "title:mitigating underwater noise from offshore wind turbines via individual pitch control": {
+    "title": "Mitigating underwater noise from offshore wind turbines via individual pitch control",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.21203/rs.3.rs-9297088/v1": {
+    "title": "A Bioinspired Self-Balancing Magnetic Tactile Sensor for Intelligent Underwater Manipulation in the Deep Sea",
+    "doi": "https://doi.org/10.21203/rs.3.rs-9297088/v1",
+    "first_seen": "2026-05-21"
+  },
+  "title:expedition programme ps155": {
+    "title": "Expedition Programme PS155",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.18432/ari29841": {
+    "title": "Creative Entanglements",
+    "doi": "https://doi.org/10.18432/ari29841",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1007/s11804-026-00799-5": {
+    "title": "Challenges and Opportunities for Digital Twins Supporting Smart Mobility in Autonomous Ship Navigation Through Complex Traffic Area",
+    "doi": "https://doi.org/10.1007/s11804-026-00799-5",
+    "first_seen": "2026-05-21"
+  },
+  "title:annotations mitigate post training mode collapse": {
+    "title": "Annotations Mitigate Post-Training Mode Collapse",
+    "doi": "",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-52060-2": {
+    "title": "Research on smart ship technology topic mining and impact quantification based on BERTopic and contrimetric",
+    "doi": "https://doi.org/10.1038/s41598-026-52060-2",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-52293-1": {
+    "title": "A machine vision based defect detection method for coated carbide CNC inserts and its industrial automation implementation analysis",
+    "doi": "https://doi.org/10.1038/s41598-026-52293-1",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.3390/heritage9050185": {
+    "title": "Research on Emotional Design for VR Games in Digital Cultural Heritage: A Case of Tianjin Marco Polo Square’s Virtual–Real Integrated Digital Scene",
+    "doi": "https://doi.org/10.3390/heritage9050185",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.66261/n9fxpp10": {
+    "title": "AI Camera Sensor-Based Detection of Crop Water Stress and Pesticide Requirement",
+    "doi": "https://doi.org/10.66261/n9fxpp10",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1007/s00170-026-18078-6": {
+    "title": "A review of design and fabrication strategies for thermoplastic lightweight thin-walled stiffened shells and lattice structures utilizing fused-filament fabrication (FFF)",
+    "doi": "https://doi.org/10.1007/s00170-026-18078-6",
+    "first_seen": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-49371-9": {
+    "title": "A blockchain-enabled framework for secure and efficient data transmission in underwater sensor networks using advanced cryptographic techniques",
+    "doi": "https://doi.org/10.1038/s41598-026-49371-9",
+    "first_seen": "2026-05-21"
   }
 }

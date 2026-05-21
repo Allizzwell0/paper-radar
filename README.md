@@ -20,13 +20,10 @@ Paper Radar 根据关键词检索近期论文，合并 OpenAlex 和 Semantic Sch
   "user_agent": "paper-radar/1.0",
   "openalex_enabled": true,
   "openalex_per_page": 50,
-  "openalex_mailto": "",
   "semantic_scholar_enabled": true,
   "semantic_scholar_per_page": 50,
-  "semantic_scholar_api_key": "",
   "deepseek_summaries": true,
   "deepseek_base_url": "https://api.deepseek.com",
-  "deepseek_api_key": "",
   "deepseek_model": "deepseek-v4-flash",
   "deepseek_summary_max_tokens": 500,
   "deepseek_temperature": 0.2,
@@ -48,11 +45,8 @@ Paper Radar 根据关键词检索近期论文，合并 OpenAlex 和 Semantic Sch
 - `user_agent`：请求 API 时使用的 User-Agent。
 - `openalex_enabled` / `semantic_scholar_enabled`：是否启用对应数据源。
 - `openalex_per_page` / `semantic_scholar_per_page`：每个关键词从对应数据源最多拉取多少条。
-- `openalex_mailto`：传给 OpenAlex 的联系邮箱；为空时会尝试环境变量 `OPENALEX_MAILTO`。
-- `semantic_scholar_api_key`：Semantic Scholar API key；为空时会尝试环境变量 `SEMANTIC_SCHOLAR_API_KEY`。
 - `deepseek_summaries`：为 `true` 时，在排名完成后调用 DeepSeek 生成中文论文总结，并附到 `outputs/latest_titles_title_only.md` 每篇文章之后。
 - `deepseek_base_url`：DeepSeek API 地址，默认 `https://api.deepseek.com`。
-- `deepseek_api_key`：DeepSeek API key；为空时会尝试环境变量 `DEEPSEEK_API_KEY`。
 - `deepseek_model`：用于生成总结的 DeepSeek 模型，可用 `--deepseek-model` 覆盖。
 - `deepseek_summary_max_tokens`：每篇文章总结的最大输出 token 数。
 - `deepseek_temperature` / `deepseek_top_p`：DeepSeek 采样参数。
@@ -61,7 +55,18 @@ Paper Radar 根据关键词检索近期论文，合并 OpenAlex 和 Semantic Sch
 - `deepseek_cache_enabled`：是否启用 `data/deepseek_summaries.json` 总结缓存。
 - `deepseek_thinking_disabled`：是否在请求 DeepSeek 时附带关闭 thinking 的参数。
 
-`deepseek_api_key` 可以直接写在配置中方便本地调试；如果这个仓库会提交到远端，建议保持为空并改用环境变量。
+私密参数写在 `config/settings.local.json`。这个文件已在 `.gitignore` 中忽略，不会被 Git 提交；可以参考 `config/settings.local.example.json`：
+
+```json
+{
+  "openalex_mailto": "you@example.com",
+  "semantic_scholar_api_key": "your-semantic-scholar-api-key",
+  "deepseek_base_url": "https://api.deepseek.com",
+  "deepseek_api_key": "your-deepseek-api-key"
+}
+```
+
+加载顺序是默认值、`config/settings.json`、`config/settings.local.json`，后面的配置会覆盖前面的配置。`deepseek_api_key`、`semantic_scholar_api_key`、`openalex_mailto` 为空时，脚本还会尝试读取对应环境变量。
 
 期刊指标写在 `config/journal_metrics.csv`：
 
@@ -80,7 +85,7 @@ npj Microgravity,2373-8065,,
 python .agents\skills\paper-radar\scripts\paper_radar.py
 ```
 
-命令行参数会覆盖 `config/settings.json`：
+命令行参数会覆盖 `config/settings.json` 和 `config/settings.local.json`：
 
 ```powershell
 python .agents\skills\paper-radar\scripts\paper_radar.py --days 14 --top 20 --min-score 0.2
@@ -91,7 +96,7 @@ python .agents\skills\paper-radar\scripts\paper_radar.py --days 14 --top 20 --mi
 - `--title-only`：让 `outputs/latest_titles.md` 也使用标题版格式。
 - `--no-title-only`：强制 `outputs/latest_titles.md` 使用完整格式。
 - `--deepseek-summary` / `--no-deepseek-summary`：启用或关闭 DeepSeek 中文总结。
-- `--deepseek-base-url` / `--deepseek-api-key`：临时指定 DeepSeek 地址或 key。
+- `--deepseek-base-url` / `--deepseek-api-key`：临时指定 DeepSeek 地址或 key；涉及 key 时更建议使用 `config/settings.local.json`。
 - `--deepseek-model`：临时指定总结模型。
 - `--deepseek-max-tokens` / `--deepseek-temperature` / `--deepseek-top-p`：临时覆盖 DeepSeek 生成参数。
 - `--include-seen`：包含已经记录在 `data/seen_papers.json` 中的论文，适合测试或重新生成输出。

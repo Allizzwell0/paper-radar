@@ -11,14 +11,14 @@ Help the user monitor recent academic papers by keywords and produce a ranked li
 
 ## Default behavior
 
-1. Read runtime settings from `config/settings.json`.
+1. Read runtime settings from `config/settings.json`, then local private overrides from ignored `config/settings.local.json`; settings include source toggles, API keys, LLM URL/model parameters, timeouts, sleeps, and cache behavior.
 2. Read keywords from `config/keywords.txt` unless the user provides keywords directly.
 3. Search recent papers from OpenAlex and Semantic Scholar.
 4. Deduplicate by DOI and normalized title.
 5. Match `config/journal_metrics.csv` by ISSN first and journal name second.
 6. Exclude retracted papers when metadata is available.
 7. Rank papers by keyword relevance, citation count, recency, journal metric, and open-access availability.
-8. When `deepseek_summaries` is enabled, call DeepSeek to generate Chinese summaries with content overview, innovation, value, and caveats.
+8. When `deepseek_summaries` is enabled, call DeepSeek using `deepseek_base_url`, `deepseek_api_key`, and related generation settings to generate Chinese summaries with content overview, innovation, value, and caveats.
 9. Save machine-readable results to `outputs/ranked_papers.csv`.
 10. Save Markdown results to `outputs/latest_titles.md` and `outputs/latest_titles_title_only.md`.
 

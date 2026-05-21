@@ -20,6 +20,7 @@ OUTPUT_DIR = ROOT / "outputs"
 
 KEYWORDS_FILE = CONFIG_DIR / "keywords.txt"
 SETTINGS_FILE = CONFIG_DIR / "settings.json"
+LOCAL_SETTINGS_FILE = CONFIG_DIR / "settings.local.json"
 JOURNAL_METRICS_FILE = CONFIG_DIR / "journal_metrics.csv"
 SEEN_FILE = DATA_DIR / "seen_papers.json"
 SUMMARY_CACHE_FILE = DATA_DIR / "deepseek_summaries.json"
@@ -72,14 +73,10 @@ def read_keywords():
     return keywords
 
 
-def load_settings(settings_file=SETTINGS_FILE):
+def load_settings(settings_file=SETTINGS_FILE, local_settings_file=LOCAL_SETTINGS_FILE):
     settings = DEFAULT_SETTINGS.copy()
-    if settings_file.exists():
-        loaded = json.loads(settings_file.read_text(encoding="utf-8-sig"))
-        if not isinstance(loaded, dict):
-            raise ValueError("config/settings.json must contain a JSON object.")
-        loaded = normalize_settings_aliases(loaded)
-        settings.update({k: loaded[k] for k in settings if k in loaded})
+    settings = merge_settings_file(settings, settings_file, required=False)
+    settings = merge_settings_file(settings, local_settings_file, required=False)
 
     settings["days"] = positive_int(settings["days"], "days")
     settings["top"] = positive_int(settings["top"], "top")
@@ -153,6 +150,22 @@ def load_settings(settings_file=SETTINGS_FILE):
         "deepseek_thinking_disabled",
     )
     return settings
+
+
+def merge_settings_file(settings, path, required=False):
+    if not path.exists():
+        if required:
+            raise FileNotFoundError(f"Missing settings file: {path}")
+        return settings
+
+    loaded = json.loads(path.read_text(encoding="utf-8-sig"))
+    if not isinstance(loaded, dict):
+        raise ValueError(f"{path} must contain a JSON object.")
+
+    loaded = normalize_settings_aliases(loaded)
+    merged = settings.copy()
+    merged.update({k: loaded[k] for k in merged if k in loaded})
+    return merged
 
 
 def normalize_settings_aliases(settings):
@@ -1011,6 +1024,7 @@ def main():
         keyword_papers, semantic_scholar_limited = fetch_keyword_papers(
             keyword,
             from_date,
+            settings,
             use_semantic_scholar=use_semantic_scholar,
         )
         all_papers.extend(keyword_papers)

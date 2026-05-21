@@ -1,0 +1,212 @@
+{
+  "doi:10.1038/s40494-026-02601-9": {
+    "title": "Flash lidar for underwater cultural heritage mapping",
+    "doi": "https://doi.org/10.1038/s40494-026-02601-9",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文评估了从无人水面艇部署的飞行时间闪光激光雷达，在瑞士、德国和希腊三处水下考古遗址进行高分辨率测绘，记录了厘米级点云数据，并与单波束回声测深仪参考数据进行了对比。\n- 创新点：将闪光激光雷达应用于水下文化遗产测绘，实现了与声学调查速度相当的厘米级点云采集，且不依赖环境光照，填补了声学与光学方法之间的操作空白。\n- 研究价值：为水下文化遗产的高分辨率测绘与监测提供了一种独立于环境光照、兼具声学效率与光学细节的新技术方案。\n- 注意事项：摘要未提及该方法的局限性（如水体浑浊度影响、最大工作深度、设备成本等），也未提供定量误差分析的具体数值，信息有限。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1007/s44267-026-00116-2": {
+    "title": "Intelligent robot systems: a survey from the perspective of visual intelligence",
+    "doi": "https://doi.org/10.1007/s44267-026-00116-2",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文从视觉智能视角综述了智能机器人系统的四项关键技术：视觉感知、决策、路径规划与控制。视觉感知作为机器人的“眼睛”负责环境识别，决策与路径规划构成“大脑”以制定策略和路径，控制作为“小脑”调节实际行为。文章还介绍了当前挑战与未来方向。\n- 创新点：从视觉智能这一统一视角系统梳理机器人四大技术模块，并明确各模块在机器人认知架构中的功能类比（如“眼睛”“大脑”“小脑”），而非仅单独讨论技术细节。\n- 研究价值：为智能机器人领域提供整合性综述，有助于理解视觉智能如何贯穿感知、决策、规划与控制全链条，对制造业、农业、医疗等行业的自主机器人应用具有参考意义。\n- 注意事项：摘要未提供具体技术方法、实验数据或性能对比，也未说明综述覆盖的文献范围与筛选标准，因此无法评估其全面性与实证支撑。",
+    "updated_at": "2026-05-21"
+  },
+  "title:earth science foundation models from perception to reasoning and discovery": {
+    "title": "Earth Science Foundation Models: From Perception to Reasoning and Discovery",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文对地球科学基础模型（Earth FMs）进行了统一综述，从“深度”（模型能力从感知到多模态推理和智能体科学工作流的演进）和“广度”（模型在大气圈、水圈、岩石圈、生物圈、人类圈、冰冻圈及地球系统耦合过程中的应用扩展）两个维度展开分析。文章整理了200多个数据集和基准，并讨论了多模态数据异质性、科学可靠性、持续更新、可扩展性等关键挑战。\n- 创新点：提出了一个结合“能力深度”和“应用广度”的双维度分析框架，系统梳理了地球科学基础模型从感知到推理再到科学发现的演进路径，并汇编了涵盖多种地球科学任务和模态的200多个数据集与基准。\n- 研究价值：为理解地球科学基础模型的发展提供了结构化路线图，指出了从基础模型向智能体和具身地球智能过渡的方向，有助于推动更集成、可信和可操作的AI地球科学应用。\n- 注意事项：本文为综述性论文，未提供具体实验或模型实现细节；摘要中未提及“world model underwater robot”关键词的具体内容，信息有限，无法确认该关键词与论文核心内容的直接关联。",
+    "updated_at": "2026-05-21"
+  },
+  "title:univ2d bridging visual restoration and semantic perception for underwater salient object detection": {
+    "title": "UniV2D: Bridging Visual Restoration and Semantic Perception for Underwater Salient Object Detection",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文提出UniV2D网络，用于水下显著目标检测，通过联合优化视觉恢复与语义感知，打破传统“先增强后检测”顺序流程导致的语义不一致问题。网络采用层次化双分支架构，包含自校准解码器、掩码感知恢复模块和显著性引导精炼模块。\n- 创新点：引入语义驱动学习范式，使高层显著性语义主动引导视觉恢复过程，同时恢复的视觉线索反向增强显著性感知，实现低层恢复与高层感知的相互促进。\n- 研究价值：在多个基准测试中显著优于现有方法，为水下联合感知任务建立了新标准，对水下机器人视觉任务具有潜在应用价值。\n- 注意事项：论文来源为预印本平台ArXiv，尚未经同行评审；引用数为0，影响因子、JCR分区及DOI均未找到，信息有限。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.5772/intechopen.1015707": {
+    "title": "Local Microcosm of Planetary Health: Global Challenges, Local Solutions",
+    "doi": "https://doi.org/10.5772/intechopen.1015707",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文以日本长崎为案例，探讨气候变化、生态系统退化等全球性挑战如何通过地方“微宇宙”集中体现。长崎因历史（国际交流、核爆经历）成为融合和平、传染病、环境变化、辐射健康与核裁军等议题的独特场所，并基于其医学、公共卫生、海洋生态等研究传统，提出通过跨学科融合应对“行星健康”问题。\n- 创新点：将长崎的历史遗产（如西方医学引入、热带医学研究所、原子弹疾病研究所、核武器废除研究中心）与当代行星健康研究整合，构建地方性解决方案的框架，强调地方经验对全球危机的映射与回应。\n- 研究价值：为理解全球挑战的地方化表现提供具体案例，展示历史、文化、科学传统如何塑造应对策略，并倡导医学、生态、工程与社会科学融合的“收敛知识”路径。\n- 注意事项：摘要未提供具体研究方法、数据或实证结果，仅基于长崎历史与机构背景进行概念性论述；论文尚未被引用（引用数0），且未提供影响因子或JCR分区信息，学术影响力待验证。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.59400/cai4243": {
+    "title": "The algorithmic guardians: AI and computer vision for global faunal welfare, conservation, and future policy trajectories in the Indian subcontinent",
+    "doi": "https://doi.org/10.59400/cai4243",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文是一篇结构化综述，系统梳理了人工智能（AI）与计算机视觉（CV）在动物福利、保护及生态系统管理中的应用，涵盖卷积神经网络、YOLO检测、姿态估计等方法，并涉及精准畜牧业、城市动物福利、野生动物保护及海洋生态监测等关键领域。\n- 创新点：提出了一个整合AI、边缘计算与伦理治理的概念框架，用于可持续动物管理；同时通过比较分析揭示了不同AI架构在准确性、计算效率与可扩展性之间的权衡。\n- 研究价值：强调了AI系统在早期疾病检测、行为分析与保护效率方面的显著提升作用，并指出了数据稀缺、算法偏见及低资源环境部署等挑战，为未来政策制定与跨学科合作提供了依据。\n- 注意事项：摘要未提供具体实验数据、案例细节或定量结果，仅基于文献综述方法；未提及实际部署效果或验证结果，且研究范围限定于印度次大陆，可能不适用于其他地区。",
+    "updated_at": "2026-05-21"
+  },
+  "title:stem education determines interdisciplinary integration": {
+    "title": "Stem Education Determines Interdisciplinary Integration",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文追溯STEM（科学、技术、工程、数学）教育缩写的历史起源，介绍其由美国细菌学家R. Colwell首次提出、2011年由生物学家Judith Ramali推广，并提及德国以MINT（数学、计算机科学、自然科学、技术）为本土化名称推进STEM教育，以及越南通过构建技术玩具实施STEM的案例。\n- 创新点：论文对比了德国MINT战略（含数字化转型、女性参与等指标）与越南基于技术玩具的跨学科学习方法，但未提出新的理论或方法。\n- 研究价值：为STEM教育的国际比较（特别是德国与越南的实践）提供了案例参考，但缺乏实证数据或系统性分析。\n- 注意事项：摘要信息有限，未涉及具体研究方法、数据或结论；论文发表于2026年（未来年份），引用数为0，来源为Neliti平台，权威性待验证；标题与摘要内容关联性较弱，且匹配关键词“world model underwater robot”在摘要中未出现。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1007/s10651-026-00732-7": {
+    "title": "Integrating deep learning and spatial statistics in marine ecosystem monitoring",
+    "doi": "https://doi.org/10.1007/s10651-026-00732-7",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文提出一个模块化框架，将深度学习目标检测器（YOLOv11）与空间点过程（Thinned Log-Gaussian Cox Process）结合，用于校正海洋调查中底栖海参的系统性漏计数。研究基于意大利Giglio岛附近海域数据，通过概率函数建模检测过程（依赖局部密度、网络置信度、目标大小等），并与未修正模型对比。\n- 创新点：首次将Thinned LGCP与深度学习目标检测集成，显式建模检测不确定性（而非简单接受检测结果），以校正空间强度估计中的偏差。\n- 研究价值：提高了大规模底栖监测的可靠性（平均Pearson残差从6.694降至6.150，平均原始残差从2.092降至1.979），支持栖息地评估和基于证据的海洋保护。\n- 注意事项：摘要未提供模型泛化性（如其他物种或海域）、YOLOv11训练细节（如数据集规模、标注方式）及计算成本信息；引用数、FWCI、影响因子和JCR分区均未找到，无法评估论文影响力。",
+    "updated_at": "2026-05-21"
+  },
+  "title:a systematic review and taxonomy of reinforcement learning model predictive control integration for linear systems": {
+    "title": "A Systematic Review and Taxonomy of Reinforcement Learning-Model Predictive Control Integration for Linear Systems",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文对基于线性或线性化预测模型的强化学习-模型预测控制（RL-MPC）集成方法进行了系统性文献综述，覆盖截至2025年的同行评审及正式索引研究。通过多维度分类法（涵盖RL功能角色、算法类别、MPC公式、成本函数结构及应用领域）组织文献，并进行了跨维度综合以识别设计模式与关联。\n- 创新点：提出了针对线性系统的RL-MPC集成多维分类体系，并进行了跨维度的设计模式与关联分析，填补了该领域文献碎片化的空白。\n- 研究价值：为研究人员和从业者设计或分析基于线性/线性化预测控制的RL-MPC架构提供了结构化参考，系统梳理了计算负担、样本效率、鲁棒性及闭环保证等实践挑战。\n- 注意事项：该论文为预印本（arXiv），尚未经正式同行评审；引用数为0，FWCI为0，且未提供影响因子与JCR分区信息，学术影响力待验证。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.47852/bonviewjcce62028129": {
+    "title": "An IoT-Based Intelligent Monitoring System for Cargo Loss Detection in FPSO-Tanker Oil Transfer",
+    "doi": "https://doi.org/10.47852/bonviewjcce62028129",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文提出一种基于物联网的智能监控系统，用于检测浮式生产储卸装置与接收油轮之间的原油转运过程中的货损。系统集成了ESP32S微控制器、超声波传感器、GPS模块和网页仪表板，实现实时监控与异常检测。原型仿真测试显示测量精度≥99.8%、响应时间约180毫秒、延迟约210毫秒、数据传输成功率98.7%，且能在1分钟内检测异常流况或潜在泄漏。\n- 创新点：提出一种模块化、可扩展的物联网监控方案，替代传统SCADA系统，在实时响应性、灵活性和对动态海洋环境的适应性上有所提升；系统设计为未来集成机器学习进行预测性异常检测奠定了基础。\n- 研究价值：为海上油气转运作业提供了一种低成本、高精度的货损监测方案，有助于减少测量误差和响应延迟导致的货物差异，提升作业安全性和效率；其可扩展架构对海事监控应用具有参考意义。\n- 注意事项：摘要未提供系统在真实海上环境中的长期运行数据或与传统SCADA系统的直接对比测试结果；论文发表于2026年，引用数为0，FWCI为0，且未找到影响因子和JCR分区，学术影响力尚待验证。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1007/s40789-026-00866-w": {
+    "title": "Evolution of visualisation and digital twin technologies in mining",
+    "doi": "https://doi.org/10.1007/s40789-026-00866-w",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文系统回顾了采矿可视化的发展历程，重点分析了3D设计、采矿方法演示及可视化驱动平台等交互式应用，并评估了VR、AR、MR技术在采矿教育、培训中的应用与局限，同时探讨了采矿数字孪生的构建标准。研究通过文献综述识别出可视化演进的七个阶段，并将关键挑战归纳为数据导向可视化与虚拟环境重建维护两大领域。\n- 创新点：首次系统梳理采矿可视化演进的七个阶段，并明确将核心挑战划分为数据导向可视化与虚拟环境重建维护两类，为后续研究提供了结构化分析框架。\n- 研究价值：为采矿行业数字化转型提供可视化技术发展路线图，强调3R技术（VR/AR/MR）在提升效率、安全性和可持续性方面的潜力，有助于指导未来技术研发与应用方向。\n- 注意事项：该论文为综述性质，未包含原始实验数据或案例验证；摘要未提供具体技术参数、定量结果或对比分析，信息有限。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1007/s42524-026-5394-x": {
+    "title": "AI for quality management: A review",
+    "doi": "https://doi.org/10.1007/s42524-026-5394-x",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文综述了人工智能（AI）在质量管理中的应用，涵盖机器学习（ML）和深度学习（DL）方法，具体包括替代模型、贝叶斯优化（BO）、智能控制图、变点检测（CPD）和可解释质量诊断等领域的整合。文章还提出了未来研究方向以应对现有挑战。\n- 创新点：系统性地梳理了AI方法在质量优化、监控和诊断中的集成应用，特别是将替代模型、贝叶斯优化与智能控制图等工具结合，突出了对复杂高维多模态数据的处理能力。\n- 研究价值：为现代工业质量管理提供了AI方法的全面参考，强调了其在提升适应性、效率和可扩展性方面的潜力，并指出了实际部署中的关键挑战与未来研究路径。\n- 注意事项：摘要未提供具体实验数据、案例研究或定量结果，也未说明AI方法与传统方法的对比效果，因此无法评估其实际性能或局限性。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1080/01691864.2026.2664845": {
+    "title": "Swarm self-clustering for communication-denied environments without global positioning",
+    "doi": "https://doi.org/10.1080/01691864.2026.2664845",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文研究在无全球定位和通信受限环境下的机器人集群自聚类问题，提出一种完全去中心化的方法，使机器人仅通过本地距离传感器感知邻近邻居的距离，自主形成并维持空间上连贯的集群，无需外部指令、全局定位或机器人间通信。\n- 创新点：提出一种自适应机制，使每个机器人根据本地邻居数量在基于共识和随机目标分配之间交替切换，无需预先知道集群参数（如大小、数量或成员身份），实现鲁棒、可扩展且不可追踪的聚类。\n- 研究价值：该方法适用于GPS拒止和通信受限的真实场景（如自主水下机器人回收和应急响应中的人群聚集），通过仿真和真实机器人实验验证了其在不同初始条件和动态添加机器人时的可扩展性、经验收敛性和鲁棒性，且优于仅依赖本地信息的基线方法。\n- 注意事项：摘要未提供具体实验设置细节（如机器人数量、传感器范围参数）或定量性能指标（如聚类质量数值），也未说明与现有方法的详细对比结果，因此无法评估方法在更复杂环境（如障碍物或噪声）中的表现。",
+    "updated_at": "2026-05-21"
+  },
+  "title:learning hybrid control policies for high precision in contact manipulation under uncertainty": {
+    "title": "Learning Hybrid-Control Policies for High-Precision In-Contact Manipulation Under Uncertainty",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文提出一种混合位置-力控制策略，用于高精度接触式操作任务（如插入脆弱连接器）。该策略通过强化学习动态选择每个控制维度使用力控制或位置控制，并引入MATCH训练方法提升学习效率。实验在极端定位不确定性下进行，使用易碎销钉插入任务验证效果。\n- 创新点：提出混合位置-力控制策略，使策略能动态切换力/位置控制模式；引入MATCH训练方法，通过调整策略动作概率显式匹配混合控制中的模式选择行为。\n- 研究价值：在定位误差下，MATCH相比纯位姿控制策略成功率提升高达10%，销钉断裂减少5倍；在1600余次仿真到现实实验中，高噪声环境下成功率从33%提升至68%，平均施加力比可变阻抗策略低约30%。\n- 注意事项：摘要未提供具体算法细节、网络架构、训练超参数及实验环境配置；未说明MATCH在不同任务类型或非接触式操作中的泛化能力；引用数为0且发表于预印本平台，尚未经同行评审。",
+    "updated_at": "2026-05-21"
+  },
+  "title:robust parameter learning for uncertain mdps": {
+    "title": "Robust Parameter Learning for Uncertain MDPs",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文提出使用参数化MDP（pMDP）学习未知马尔可夫决策过程，将统计不确定性从经验转移频率投影到参数空间，构建尊重转移间代数依赖的PAC不确定性模型，并设计多面体外近似层次以解决算法求解挑战。\n- 创新点：首次在不确定MDP学习中利用pMDP捕捉转移概率间的代数依赖关系，替代传统独立区间估计方法；提出基于PAC理论的不确定性建模框架及可求解的多面体外近似层次。\n- 研究价值：实验表明该方法相比经典区间不确定MDP学习技术，能提供更紧致的不确定性估计，提升水下操作强化学习等场景中策略鲁棒性验证的准确性。\n- 注意事项：摘要未提供具体实验设置、数据集、基线方法细节及定量结果；未说明pMDP求解层次的计算复杂度与可扩展性；未讨论方法在非水下操作场景的适用性。",
+    "updated_at": "2026-05-21"
+  },
+  "title:multi depth uniform coverage path planning for unmanned surface vehicle surveying": {
+    "title": "Multi-Depth Uniform Coverage Path Planning for Unmanned Surface Vehicle Surveying",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文提出一种用于无人水面艇水深测量的新型自动覆盖路径规划算法。该算法利用粗略的先验深度信息预处理目标区域，自适应引导路径生成和传感范围配置，通过优化测线间距和调整声束孔径，实现更一致的海底覆盖。\n- 创新点：首次将局部海底深度对多波束回声测深仪探测范围的影响显式纳入路径规划，通过深度变化自适应调整测线间距和传感波束孔径，替代传统等深直线往复路径方案。\n- 研究价值：在合成地形中覆盖率超过99%（传统方法最高75%），在真实港口水深数据模拟中覆盖率超过92%（传统方法低于65%），同时实现全自动设计，适用于自主海洋航行器实际应用。\n- 注意事项：摘要未提供算法计算复杂度、实时性表现、对先验深度数据精度的依赖程度，以及在不同海况下的鲁棒性验证。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1186/s13638-026-02607-8": {
+    "title": "Environment-aware indoor LoRaWAN path loss: parametric regression comparisons, shadow fading, and calibrated fade margins",
+    "doi": "https://doi.org/10.1186/s13638-026-02607-8",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文针对室内LoRaWAN传播受结构性和时变环境因素影响的问题，提出一种环境条件路径损耗框架。该框架在基于对数距离的多墙基线模型基础上，加入共记录的环境协变量（相对湿度、温度、二氧化碳、颗粒物、气压）和接收器报告的信噪比，并在240平方米的八楼办公室进行了12个月的测量验证。通过时间分块5折交叉验证和时序留出法，比较了正则化多元线性回归、共轭贝叶斯线性回归和选择性二次多元线性回归等参数回归方法。\n- 创新点：提出将环境协变量与接收器信噪比融入路径损耗建模，并采用选择性二次多项式均值回归提升预测精度；发现残差呈非高斯分布，并用紧凑的三分量高斯混合模型进行最佳描述；将预测误差转化为可靠性指标，通过上尾百分位数规定衰落余量，并附加移动块自举不确定性验证。\n- 研究价值：在99%可靠性下，多项式模型仅需25.73 dB衰落余量，而线性基线需27.79至28.05 dB，从而支持更紧凑的室内大规模物联网链路预算，符合第六代（6G）可靠性目标与能源约束要求。\n- 注意事项：摘要未提供论文的具体方法细节（如环境协变量采集方式、模型参数选择依据）、实验环境的具体描述（如办公室布局、设备部署）以及与其他现有模型的全面对比结果。",
+    "updated_at": "2026-05-21"
+  },
+  "title:dynojepp joint estimation prediction and planning in dynamic environments": {
+    "title": "DynoJEPP: Joint Estimation, Prediction and Planning in Dynamic Environments",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文提出DynoJEPP框架，基于因子图联合优化动态环境中的状态估计、预测与规划。针对传统方法中预测和规划信息反馈导致估计污染的问题，引入有向因子强制信息单向流动。进一步提出Cooperative DynoJEPP，使自车机器人将合作对象行为纳入预测与轨迹规划。\n- 创新点：提出有向因子（directed factor）概念，在因子图中强制信息单向流动，防止预测和规划污染状态估计；扩展至合作场景，使机器人能整合合作对象行为进行预测和规划。\n- 研究价值：实验表明有向因子对安全导航至关重要（无此因子时机器人在多数实验中发生碰撞），为动态环境下的自主系统安全运行提供了新的因子图建模方法。\n- 注意事项：论文来源为ArXiv预印本，未经同行评审；摘要未提供具体实验设置、数据集、定量指标或与基线方法的详细对比；未说明有向因子的计算复杂度或实时性表现。",
+    "updated_at": "2026-05-21"
+  },
+  "title:mitigating underwater noise from offshore wind turbines via individual pitch control": {
+    "title": "Mitigating underwater noise from offshore wind turbines via individual pitch control",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文提出了一种通过独立变桨控制（IPC）策略来降低海上风力发电机水下噪声的方法。研究基于NREL 5 MW、DTU 10 MW和IEA 22 MW三种参考机型，结合叶素动量理论与气-水声传播模型，量化了叶片气动噪声的水下声学特征，并测试了开环IPC策略在叶片通过频率下调节桨距角的效果。结果显示，约3°的桨距角变化可使总声压级（OSPL）降低3 dB，振幅调制（AM）深度减少20%，同时能量捕获损失仅3-5%。该方法主要对低中频段有效，对高频听力物种效果有限。\n- 创新点：首次将独立变桨控制（IPC）策略应用于海上风机水下噪声缓解，并量化了叶片通过频率下桨距角调制对水下声学特征（OSPL和AM）的具体影响，揭示了此前未被充分关注的噪声传播路径。\n- 研究价值：为海上风电行业提供了一种可操作的噪声缓解技术方案，有助于减少对依赖声音进行交流、导航和生存的海洋生物的影响，对满足未来水下噪声法规要求具有实际意义。\n- 注意事项：摘要未提供论文的DOI、期刊影响因子、JCR分区及引用数据，且匹配关键词“underwater manipulation reinforcement learning”与论文实际内容（独立变桨控制）不一致，需注意该关键词可能不准确。此外，论文来源为UPM数字档案，尚未经同行评议期刊正式发表。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.21203/rs.3.rs-9297088/v1": {
+    "title": "A Bioinspired Self-Balancing Magnetic Tactile Sensor for Intelligent Underwater Manipulation in the Deep Sea",
+    "doi": "https://doi.org/10.21203/rs.3.rs-9297088/v1",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文标题为“A Bioinspired Self-Balancing Magnetic Tactile Sensor for Intelligent Underwater Manipulation in the Deep Sea”，发表于Research Square（2026-04-27），DOI为10.21203/rs.3.rs-9297088/v1。由于摘要未找到，无法提供具体研究内容、方法或结论。\n- 创新点：根据标题推测，可能提出了一种仿生自平衡磁触觉传感器，用于深海智能水下操作，但摘要缺失，无法确认具体创新设计或技术突破。\n- 研究价值：论文主题涉及水下机器人抓取（匹配关键词），可能对深海操作中的触觉感知与自主控制有潜在贡献，但缺乏摘要，无法评估实际价值。\n- 注意事项：当前信息仅基于标题、DOI和关键词，摘要缺失导致无法总结具体内容、实验数据或论证过程。建议获取完整论文后再做详细分析。",
+    "updated_at": "2026-05-21"
+  },
+  "title:expedition programme ps155": {
+    "title": "Expedition Programme PS155",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：该论文为“Expedition Programme PS155”，由Helmholtz-Zentrum für Polar-und Meeresforschung（Alfred-Wegener-Institut）于2026年5月12日发布。由于未提供摘要，无法获知具体研究内容、方法或结论。\n- 创新点：基于现有元数据，无法识别任何创新点。摘要缺失导致无法判断该计划在科学设计、技术或方法论上的突破。\n- 研究价值：作为极地与海洋研究机构的考察计划，可能涉及极地或海洋科学领域，但缺乏摘要和引用数据，无法评估其具体学术价值或影响力。\n- 注意事项：摘要缺失，且未找到DOI、引用数、FWCI、影响因子及JCR分区等关键信息。本总结仅基于标题和来源机构，信息极为有限，需谨慎参考。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.18432/ari29841": {
+    "title": "Creative Entanglements",
+    "doi": "https://doi.org/10.18432/ari29841",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文通过后人类艺术探究（PABI）及其“实验性重组”（riffology）原则，审视艺术本位研究（ABR）的演变实践。基于德勒兹-瓜塔里哲学、新唯物主义视角和后质性研究，将艺术创作视为本体论事件而非单纯表征，强调跨越人类、技术与生态领域的共享能动性与伦理责任。\n- 创新点：提出“riffology”概念作为PABI的核心原则，挑战ABR中的人类中心假设，通过非人类力量介入拓展创造力与知识生产的边界，并构建后人类批判教育学框架。\n- 研究价值：在行星危机背景下重新构想创造性探究，为教育和社会转型提供后人类视角的批判性教学法，推动ABR领域突破传统边界。\n- 注意事项：摘要未提供具体实验案例或方法论细节，无法评估实证支撑强度；引用数为0且无影响因子数据，需注意该论文的学术影响力尚未被验证。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1007/s11804-026-00799-5": {
+    "title": "Challenges and Opportunities for Digital Twins Supporting Smart Mobility in Autonomous Ship Navigation Through Complex Traffic Area",
+    "doi": "https://doi.org/10.1007/s11804-026-00799-5",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文探讨数字孪生（DT）在复杂水域自主船舶（AS）导航中的应用潜力，通过回顾现有规则、导航与路径跟踪系统，以及宏观交通分析模型，评估DT整合宏观交通信息以提升安全性与效率的可能性。\n- 创新点：提出将数字孪生与宏观交通分析模型结合，以扩展自主船舶导航系统在复杂交通区域（如紧急行为、恶劣环境、交叉局面）的适应能力。\n- 研究价值：为自主船舶在复杂水域的安全高效导航提供新思路，同时指出DT在航运脱碳与智能移动性实现中的潜在贡献。\n- 注意事项：摘要未提供具体实验数据、案例验证或定量分析结果，仅基于文献回顾与概念探讨，信息有限。",
+    "updated_at": "2026-05-21"
+  },
+  "title:annotations mitigate post training mode collapse": {
+    "title": "Annotations Mitigate Post-Training Mode Collapse",
+    "doi": "",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文研究监督微调（SFT）导致模型语义模式崩溃的问题，提出“注释锚定训练”方法，通过在预训练阶段引入语义注释分布，并在后训练阶段保留该分布，以缓解多样性损失。实验表明该方法可将多样性崩溃降低至SFT模型的1/6，且效果随模型规模提升。\n- 创新点：提出注释锚定训练，利用预训练数据中的语义注释分布作为锚点，在监督微调后仍能保持预训练阶段的语义多样性，而非仅依赖低熵微调数据。\n- 研究价值：揭示了监督微调中语义多样性随模型规模增大而加剧的权衡问题，并提供了一种简单有效的解决方案，有助于提升后训练模型的生成多样性和语义丰富性。\n- 注意事项：论文来源为ArXiv预印本，尚未经同行评审；引用数为0，影响因子和JCR分区均未找到；摘要未提供具体实验设置、数据集或任务类型，信息有限。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-52060-2": {
+    "title": "Research on smart ship technology topic mining and impact quantification based on BERTopic and contrimetric",
+    "doi": "https://doi.org/10.1038/s41598-026-52060-2",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文提出结合BERTopic语义主题建模与Contrimetric贡献度测量的分析框架，通过逻辑增长曲线和主题聚类等模型，研究智能船舶领域的技术生命周期、主题演化和知识扩散，揭示研究热点转移路径与发展趋势。\n- 创新点：将BERTopic主题模型与Contrimetric贡献度测量方法相结合，构建了智能船舶技术主题挖掘与影响量化的新分析框架。\n- 研究价值：为研究人员、企业和政策制定者提供宏观参考，促进智能船舶产业的技术创新与可持续发展。\n- 注意事项：摘要未提供具体实验数据、模型参数或对比实验结果，信息有限，无法评估方法有效性或与其他方法的优劣。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-52293-1": {
+    "title": "A machine vision based defect detection method for coated carbide CNC inserts and its industrial automation implementation analysis",
+    "doi": "https://doi.org/10.1038/s41598-026-52293-1",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文提出了一种基于机器视觉的涂层硬质合金CNC刀片表面缺陷自动检测方法，构建了专用数据集并标注缺陷类别，开发了注意力增强多缺陷YOLO模型（A2MD-YOLO），最终将算法集成至硬件系统实现自动化检测。\n- 创新点：针对CNC刀片缺陷数据集中缺陷尺寸差异大、类内外观方差高、类间方差低的特点，设计了A2MD-YOLO模型，通过注意力机制增强多缺陷检测能力，使mAP从0.529提升至0.571，漏检率从21.4%降至11.8%。\n- 研究价值：解决了传统人工检测效率低、漏检率高的问题，为CNC刀片表面缺陷的工业自动化检测提供了可行的技术方案，有助于提升加工精度和生产效率。\n- 注意事项：摘要未提供数据集规模、具体缺陷类别、硬件系统实现细节及工业部署成本等信息，也未说明模型在不同工况下的泛化能力或与其他方法的对比实验。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.3390/heritage9050185": {
+    "title": "Research on Emotional Design for VR Games in Digital Cultural Heritage: A Case of Tianjin Marco Polo Square’s Virtual–Real Integrated Digital Scene",
+    "doi": "https://doi.org/10.3390/heritage9050185",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文以天津马可波罗广场的虚实融合数字场景为例，探讨虚拟现实（VR）游戏中情感设计对文化遗产（CH）学习与身份认同的影响。研究发现，情感驱动的VR游戏通过多感官沉浸、目标导向交互和叙事连接，增强了用户的沉浸感、参与度、共鸣及学习效果。\n- 创新点：构建了结合建构主义学习理论的“本能—行为—反思”三层情感设计框架，以解决文化遗产传播中情感缺失的问题。\n- 研究价值：实践上验证了情感化VR游戏能将文化遗产从单向传播升级为动态传承，建立新的参与式文化范式。\n- 注意事项：摘要未提供具体实验设计、样本量、数据统计方法及定量结果，信息有限，无法评估研究严谨性与结论普适性。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.66261/n9fxpp10": {
+    "title": "AI Camera Sensor-Based Detection of Crop Water Stress and Pesticide Requirement",
+    "doi": "https://doi.org/10.66261/n9fxpp10",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文是一篇文献综述，系统总结了基于AI摄像头传感器的作物水分胁迫检测与农药需求评估技术，涵盖RGB、热成像、多光谱和高光谱成像与机器学习/深度学习的集成应用。\n- 创新点：指出热成像和高光谱成像对水分胁迫检测特别有效，而RGB和多光谱系统在识别病害症状、虫害和喷洒目标方面高度实用；综述了从简单分类向实时决策支持、多模态融合、可解释AI和精准投入应用的转变趋势。\n- 研究价值：展示了AI摄像头传感器在减少水资源浪费、降低过量农药使用以及提升可持续农业生产力方面的巨大潜力，为精准农业决策支持提供了系统性参考。\n- 注意事项：摘要未提供具体研究方法、实验数据或定量结果，也未说明文献筛选标准或综述范围；期刊来源、影响因子和JCR分区信息缺失，且引用数为0，需谨慎评估其学术影响力。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1007/s00170-026-18078-6": {
+    "title": "A review of design and fabrication strategies for thermoplastic lightweight thin-walled stiffened shells and lattice structures utilizing fused-filament fabrication (FFF)",
+    "doi": "https://doi.org/10.1007/s00170-026-18078-6",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：本文综述了利用熔丝制造（FFF）技术设计和制造热塑性轻质薄壁加筋壳与点阵结构的策略，涵盖设计优化方法（如面向增材制造设计DfAM和拓扑优化TO）、传统CAD工具局限性及主要制造挑战，并整合多学科视角以形成对FFF组件结构效率与可靠性的综合理解。\n- 创新点：系统性地将设计策略、优化技术与制造挑战联系起来进行综述，弥补了现有研究多聚焦单一环节而缺乏整体工作流整合的不足，并前瞻性地提出人工智能驱动过程控制与数字孪生等未来研究方向。\n- 研究价值：为研究人员和实践者提供了FFF轻质结构从设计到制造的详细资源，有助于克服当前技术限制，推动FFF向下一代弹性轻质系统发展。\n- 注意事项：该论文为综述性文章，未提供实验数据或具体案例验证；摘要中未提及与“underwater manipulation reinforcement learning”关键词相关的内容，信息有限。",
+    "updated_at": "2026-05-21"
+  },
+  "doi:10.1038/s41598-026-49371-9": {
+    "title": "A blockchain-enabled framework for secure and efficient data transmission in underwater sensor networks using advanced cryptographic techniques",
+    "doi": "https://doi.org/10.1038/s41598-026-49371-9",
+    "model": "deepseek-v4-flash",
+    "summary": "- 内容概述：论文提出一个基于区块链的框架，结合异步拜占庭容错（ABFT）共识与高级密码学技术（如分布式密钥生成、可验证秘密共享、多方计算和门限密码学），用于解决水下传感器网络（USN）中高传播延迟、低带宽、动态信道条件及拜占庭攻击等通信限制。通过形式化和非形式化安全分析验证框架的安全性，并通过吞吐量、延迟、丢包率、CPU利用率和网络寿命等指标进行性能评估。\n- 创新点：将异步拜占庭容错（ABFT）共识与分布式密钥生成（DKG）、可验证秘密共享（VSS）、多方计算（MPC）和门限密码学等高级密码学技术相结合，构建一个集成化的安全数据传输框架，而非采用孤立的传统安全机制。\n- 研究价值：为水下传感器网络提供了一种兼顾安全性与效率的数据传输解决方案，实验结果表明该框架在安全鲁棒性和系统效率上优于现有方法，对海洋环境监测、海洋研究和军事监视等应用具有潜在意义。\n- 注意事项：摘要未提供具体的实验环境、数据集或对比方法的详细描述，也未给出量化性能提升的具体数值；引用数为0且FWCI为0，表明该论文尚未被广泛引用或评估。",
+    "updated_at": "2026-05-21"
+  }
+}
