@@ -1,0 +1,24 @@
+topics:
+  underwater_manipulation:
+    name_zh: 水下机器人操作
+    name_en: Underwater Robotic Manipulation
+    obsidian_subdir: underwater-manipulation
+    tags:
+      - underwater-robotics
+      - manipulation
+      - uvms
+    keywords:
+      - underwater vehicle manipulator system UVMS
+      - autonomous underwater manipulation
+      - underwater robotic grasping
+      - underwater grasping diffusion policy
+      - underwater manipulation imitation learning
+      - underwater manipulation reinforcement learning
+      - model-based reinforcement learning underwater robot
+      - world model underwater robot
+      - latent dynamics underwater vehicle
+      - sim-to-real underwater manipulation
+    exclude_keywords:
+      - underwater image enhancement
+      - marine biology
+      - fishery
